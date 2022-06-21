@@ -1,7 +1,9 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
+st.subheader('读入数据')
 df = pd.read_csv('NSE-TATAGLOBAL11.csv')
+st.dataframe(df)
 
 st.subheader('选择时间序列')
 options = np.array(df['Date']).tolist()
