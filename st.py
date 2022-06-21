@@ -1,6 +1,11 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
+from LinearRegression import  LinearRegression
+from MovingAverage import MovingAverage
+from KNearestNeighbours import KNearestNeighbours
+from AutoARIMA import AutoARIMA
+from LongShortTM import LongShortTM
 
 df = pd.read_csv('NSE-TATAGLOBAL11.csv')
 number = st.number_input("请输入训练集所占比例：",min_value=0.5,max_value=0.9,value=0.8,step=0.1)
