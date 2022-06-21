@@ -1,3 +1,5 @@
 import streamlit as st
-st.title('My first app')
-st.write('可以支持中文吗？')
+import pandas as pd
+st.subheader('1.读入数据')
+df = pd.read_csv('NSE-TATAGLOBAL11.csv')
+st.dataframe(df)
