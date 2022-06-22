@@ -1,9 +1,6 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-from LinearRegression import  LinearRegression
-from MovingAverage import MovingAverage
-from KNearestNeighbours import KNearestNeighbours
 
 df = pd.read_csv('NSE-TATAGLOBAL11.csv')
 st.dataframe(df)
