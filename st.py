@@ -4,7 +4,6 @@ import numpy as np
 from LinearRegression import  LinearRegression
 from MovingAverage import MovingAverage
 from KNearestNeighbours import KNearestNeighbours
-from LongShortTM import LongShortTM
 
 df = pd.read_csv('NSE-TATAGLOBAL11.csv')
 number = st.number_input("请输入训练集所占比例：",min_value=0.5,max_value=0.9,value=0.8,step=0.1)
@@ -24,5 +23,4 @@ elif genre == '线性回归算法':
      LinearRegression(df, type, split)
 elif genre == '最近邻算法':
      KNearestNeighbours(df, type, split)
-elif genre == 'LSTM算法':
-    LongShortTM(df, type, split)
+
